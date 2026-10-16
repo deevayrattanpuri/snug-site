@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Snug does — every tool, explained</title>
+<meta name="description" content="A full tour of Snug's photo tools: resize by file size or pixels, crop and fit, convert between JPG, PNG, WebP and HEIC, batch mode, images to PDF, presets, metadata removal and more.">
+<link rel="canonical" href="https://deevayrattanpuri.github.io/snug-site/what-it-does.html">
+<meta name="theme-color" content="#00897B" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A1210" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="What Snug does — every tool, explained">
+<meta property="og:description" content="A full tour of Snug's photo tools: resize by file size or pixels, crop and fit, convert between JPG, PNG, WebP and HEIC, batch mode, images to PDF, presets, metadata removal and more.">
+<meta property="og:url" content="https://deevayrattanpuri.github.io/snug-site/what-it-does.html">
+<meta property="og:image" content="https://deevayrattanpuri.github.io/snug-site/assets/feature-graphic.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/icon-32.png" sizes="32x32">
+<link rel="icon" href="assets/icon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the difference between resizing and compressing?", "acceptedAnswer": {"@type": "Answer", "text": "Resizing changes how many pixels the photo has. Compressing keeps the pixels and uses fewer bytes to describe them. If a form wants smaller dimensions, resize. If the dimensions are right and the file is just too heavy, compress."}}, {"@type": "Question", "name": "Why does my photo get rejected even though it is under the size limit?", "acceptedAnswer": {"@type": "Answer", "text": "File size is only one of the rules. Forms also check dimensions, aspect ratio, format and sometimes resolution \u2014 and for document photos, things like background and framing that no resizer can judge."}}, {"@type": "Question", "name": "Can Snug make a small photo bigger?", "acceptedAnswer": {"@type": "Answer", "text": "It can enlarge one, but it cannot add detail that was never captured. An enlarged photo spreads the same information over more pixels, which usually looks softer, not better."}}, {"@type": "Question", "name": "Does batch mode cost anything?", "acceptedAnswer": {"@type": "Answer", "text": "No. Batch size is not limited and is not a paid feature. The optional subscription removes ads and changes nothing else."}}, {"@type": "Question", "name": "Where do the finished files go?", "acceptedAnswer": {"@type": "Answer", "text": "Into Pictures/Snug as new files. Your originals stay exactly where they were."}}]}</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/icon-96.png" width="30" height="30" alt="">
+      Snug
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a><a href="what-it-does.html" aria-current="page">What it does</a><a href="blog/">Blog</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" style="padding-bottom:clamp(24px,4vw,40px)">
+    <div class="wrap" style="display:block;max-width:860px">
+      <p class="eyebrow">What it does</p>
+      <h1 style="font-size:clamp(2.2rem,5.4vw,3.2rem)">Every tool, explained</h1>
+      <p class="lead" style="max-width:60ch">Snug is a photo resizing utility. It changes the
+        dimensions, file size and format of pictures already on your phone, and can combine them into
+        a PDF. Here is what each part of it is for, and when you would reach for it.</p>
+      <ul class="chips">
+        <li class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M9.3 9.3h5.4"/><path d="M9.3 12.4h5.4"/><path d="M11.4 16.5V8.4"/></svg> Everything free</li>
+        <li class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 4.5 21 19.5"/><path d="M5.5 10.2a12 12 0 0 1 4.2-2.4"/><path d="M2.2 7.1a16 16 0 0 1 4.3-2.8"/><path d="M17.8 11a12 12 0 0 0-3.1-2.2"/><path d="M21.8 7.1a16 16 0 0 0-5.2-3.1"/><path d="M8.6 13.8a7 7 0 0 1 6.1-.3"/><circle cx="12" cy="18" r="1" fill="currentColor"/></svg> Works offline</li>
+        <li class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4.5" y="10" width="15" height="10.5" rx="2.5"/><path d="M8.2 10V7.4a3.8 3.8 0 0 1 7.6 0V10"/></svg> Nothing uploaded</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap" style="max-width:860px">
+      <img src="assets/feature-graphic.webp" width="1024" height="500" loading="lazy"
+           style="border-radius:var(--r-xl);box-shadow:var(--sh-2);display:block;width:100%"
+           alt="Snug — photo and picture resizer. Free, batch resize, works offline.">
+    </div>
+  </section>
+
+  <div class="doc" style="display:block;padding-top:0">
+    <div class="wrap">
+      <nav class="toc" aria-label="Contents">
+        <h2>Contents</h2>
+        <ol>
+        <li><a href="#file-size">Resize by file size</a></li>
+        <li><a href="#pixels">Resize by pixels</a></li>
+        <li><a href="#percentage">Resize by percentage</a></li>
+        <li><a href="#print">Resize for print</a></li>
+        <li><a href="#crop">Crop, fit and rotate</a></li>
+        <li><a href="#convert">Convert between formats</a></li>
+        <li><a href="#compress">Compress without resizing</a></li>
+        <li><a href="#batch">Batch mode</a></li>
+        <li><a href="#pdf">Images to PDF</a></li>
+        <li><a href="#id">ID and passport photos</a></li>
+        <li><a href="#presets">Presets</a></li>
+        <li><a href="#watermarks">Watermarks</a></li>
+        <li><a href="#metadata">Metadata removal</a></li>
+        <li><a href="#space">Free up space</a></li>
+        <li><a href="#history">History and originals</a></li>
+        <li><a href="#ads">Ads, and what paying changes</a></li>
+        <li><a href="#not">What Snug does not do</a></li>
+          <li><a href="#specs">Specifications</a></li>
+          <li><a href="#faq">Questions</a></li>
+        </ol>
+      </nav>
+      <article class="prose">
+      <h2 id="file-size">Resize by file size</h2>
+<p>This is the one most people come for. An upload form says <em>maximum 200 KB</em> and refuses
+everything above it, and nothing on your phone tells you how big a photo actually is until it has
+already been rejected.</p>
+<p>Snug works backwards from the limit. You set the ceiling &mdash; 100 KB, 200 KB, 500 KB, 1 MB, or
+your own number &mdash; and it finds the combination of quality and dimensions that lands underneath
+it. The screen shows what the photo weighed before, what it weighs now, and the percentage saved, so
+you can see what the compression cost before you commit to it.</p>
+<ul>
+  <li>Preset limits for the sizes forms ask for most often</li>
+  <li>A custom limit when the form wants something unusual</li>
+  <li>Before and after sizes shown together, with the saving as a percentage</li>
+  <li>The result written as a new file, so you can try again without losing anything</li>
+</ul>
+      <h2 id="pixels">Resize by pixels</h2>
+<p>When a site specifies exact dimensions &mdash; 600 &times; 600, 1080 &times; 1080, 1600 px on the
+long edge &mdash; you type the numbers in directly. Width and height sit side by side with a link
+between them.</p>
+<p>Leave the link on and the aspect ratio holds: change the width and the height follows, so the
+photo keeps its proportions and nothing stretches. Turn it off when a form demands exact dimensions
+that do not match your photo's shape, and crop first so you choose what gets cut rather than letting
+the image squash.</p>
+      <h2 id="percentage">Resize by percentage</h2>
+<p>Sometimes you do not need a specific number, you just need <em>smaller</em>. Scaling to 50% or
+25% is the quickest way to make a photo reasonable to send without thinking about pixels at all.</p>
+<p>It is also the safest way to shrink a batch of photos that are not all the same size. A fixed
+pixel width would blow up the small ones and crop the panoramas; a percentage treats each photo
+proportionally.</p>
+      <h2 id="print">Resize for print</h2>
+<p>Print is measured in physical units, not pixels, and the bridge between them is resolution. A
+4 &times; 6 inch print at 300 DPI needs 1200 &times; 1800 pixels; the same print at 72 DPI would come
+out soft and blocky.</p>
+<p>Snug lets you work in print sizes so you do not have to do that multiplication yourself. Choose
+the physical size you are printing and it works out the pixel dimensions that will hold up on
+paper.</p>
+      <h2 id="crop">Crop, fit and rotate</h2>
+<p>Cropping decides what stays in frame. Fitting decides what happens to the space around it. They
+solve different problems and Snug keeps both.</p>
+<p><strong>Crop</strong> cuts the photo down to the part you want, with the common ratios ready to
+tap &mdash; 1:1 for profile pictures, 4:3 and 3:2 for prints, 16:9 for anything widescreen.
+<strong>Fit</strong> keeps the whole image and pads the edges instead, which is what you want when a
+form insists on a square and cutting someone's shoulders off is not an option.
+<strong>Rotate</strong> handles photos that arrive sideways, including the ones that look fine in
+your gallery and land rotated in an upload.</p>
+      <h2 id="convert">Convert between formats</h2>
+<p>Four formats, each good at something different:</p>
+<div class="table-wrap scroll">
+  <table>
+    <thead><tr><th>Format</th><th>Best for</th><th>Watch out for</th></tr></thead>
+    <tbody>
+      <tr><td>JPG</td><td>Photographs, uploads, anything that has to be accepted everywhere</td>
+        <td>Loses a little detail every time it is re-saved</td></tr>
+      <tr><td>PNG</td><td>Screenshots, text, logos, anything needing sharp edges</td>
+        <td>Much larger files for ordinary photographs</td></tr>
+      <tr><td>WebP</td><td>Web pages &mdash; noticeably smaller at the same quality</td>
+        <td>Older upload forms sometimes reject it</td></tr>
+      <tr><td>HEIC</td><td>Storage on modern phones, at high quality</td>
+        <td>Many websites and older machines cannot open it</td></tr>
+    </tbody>
+  </table>
+</div>
+<p>The practical case is HEIC to JPG. Modern phone cameras save HEIC because it is efficient, and
+then an upload form rejects the file as an unknown type. Open it in Snug, pick JPG, save, and the
+form stops complaining.</p>
+      <h2 id="compress">Compress without resizing</h2>
+<p>Resizing and compressing are not the same thing. Resizing changes how many pixels there are;
+compressing changes how many bytes are used to describe them. When a photo is already the right
+dimensions and simply too heavy, compressing is the tool you want.</p>
+<p>It is the right choice for a document scan that has to stay legible at full size, or a print-bound
+photo you cannot afford to shrink.</p>
+      <h2 id="batch">Batch mode</h2>
+<p>Doing one photo is fine. Doing forty is where phone apps usually give up.</p>
+<p>Batch mode applies one set of settings to a whole selection and reports on each file as it
+finishes, with a running total of what the set weighed before and after. Twelve holiday photos at
+48.2 MB come out the other side at 9.6 MB, and you can see which photo contributed what.</p>
+<ul>
+  <li>One setting applied across the whole selection</li>
+  <li>Per-photo before and after sizes, plus a total saving</li>
+  <li>Batch rename on the way out, so files arrive in a sensible order</li>
+  <li>Share the finished set, or save all of them to the gallery in one go</li>
+</ul>
+      <h2 id="pdf">Images to PDF</h2>
+<p>Plenty of applications want a single PDF rather than a folder of photos &mdash; proof of address,
+a signed form, a set of receipts. Snug combines images into one document in the order you choose, so
+you do not need a separate scanner app to do it.</p>
+<p>Because the pages are built from images you have already resized, you control how big the finished
+PDF is: shrink the photos first and the document comes out small enough to email.</p>
+      <h2 id="id">ID and passport photos</h2>
+<p>Document photos have two sets of rules. The first is dimensional &mdash; a specific physical size,
+a specific head height within the frame, a specific resolution. The second is about content, and no
+resizer can help with it: background colour, expression, glasses, head covering, shadows.</p>
+<p>Snug handles the first set. Presets give you the proportions and pixel dimensions for common
+document sizes so the file you submit is at least mechanically correct.</p>
+<div class="callout hi">
+  <p><strong>The second set is on you.</strong> Meeting a size requirement does not mean an image
+  will be accepted. Always check the published rules of the authority you are submitting to &mdash;
+  they change, and they vary by country.</p>
+</div>
+      <h2 id="presets">Presets</h2>
+<p>A preset is somebody having already read the requirements so you do not have to. Snug ships with
+presets for passport photos, exam forms, government portals, marketplaces and social networks, each
+one carrying the dimensions and file-size ceiling that applied when it was added.</p>
+<p>They live in their own tab, so the preset you use every term is two taps away rather than
+somewhere in a settings menu.</p>
+      <h2 id="watermarks">Watermarks</h2>
+<p>A watermark is worth adding when a photo is going somewhere public and you would rather it stayed
+attributable &mdash; marketplace listings, portfolio shots, images handed to a client for review.</p>
+<p>The useful watermark is the one people stop noticing after a second: small, in a corner, low
+opacity, never across a face. Snug applies it to the copy it saves, so the clean original is still
+there when you need a version without it.</p>
+      <h2 id="metadata">Metadata removal</h2>
+<p>A photo carries more than the picture. EXIF metadata records the camera, the settings, the date
+and &mdash; often &mdash; the exact GPS coordinates where the shutter was pressed. That is useful in
+your own library and considerably less useful attached to a photo in a public listing.</p>
+<p>The Metadata tool strips it out of the saved copy. The data never leaves your device either way:
+Snug reads it on the phone, removes it on the phone, and writes a clean file to your gallery.</p>
+      <h2 id="space">Free up space</h2>
+<p>Storage warnings usually arrive at the worst moment, and the standard advice &mdash; delete things
+&mdash; means choosing which memories to lose.</p>
+<p>There is normally a better option, because a handful of enormous files are doing most of the
+damage. Snug sorts your library by size and shows the worst offenders: forty photos using 1.6 GB,
+which can become a fraction of that at a resolution you would struggle to tell apart on a phone
+screen. You keep every picture and get most of the space back.</p>
+      <h2 id="history">History and originals</h2>
+<p>Every job Snug runs is listed in History, so you can find the file you made last Tuesday without
+hunting through your gallery.</p>
+<p>Underneath it is a rule that does not bend: results are written as <strong>new files</strong> in
+<code>Pictures/Snug</code>, and your originals are left exactly as they were. Replacing an original
+is possible, but it is a separate, explicit choice that asks for confirmation first. If a resize
+comes out worse than you hoped, the photo you started with is still sitting in your gallery.</p>
+      <h2 id="ads">Ads, and what paying changes</h2>
+<p>Snug is free because it shows ads, served through Google AdMob. That is the only part of the app
+that talks to the internet, and the <a href="privacy.html">Privacy Policy</a> covers exactly what it
+collects.</p>
+<p>An optional subscription removes those ads. It unlocks nothing, because there is nothing to
+unlock: every tool, preset, batch size and output format is free whether you pay or not. Billing is
+handled by Google Play, and you can cancel any time from the Play Store.</p>
+      <h2 id="not">What Snug does not do</h2>
+<p>Being clear about the edges is more useful than pretending there aren't any.</p>
+<ul>
+  <li><strong>It is not a photo editor.</strong> No filters, no retouching, no curves &mdash; it
+    changes size, shape and format, and leaves the picture alone.</li>
+  <li><strong>It cannot invent detail.</strong> Enlarging a small photo cannot add information that
+    was never captured; it can only spread what is there over more pixels.</li>
+  <li><strong>It cannot promise acceptance.</strong> Snug can hit a size requirement exactly and the
+    body you are submitting to can still say no, for reasons a resizer cannot see.</li>
+  <li><strong>It cannot undo compression.</strong> Saving a heavily compressed JPG at high quality
+    does not bring back what the first compression discarded.</li>
+</ul>
+
+      <h2 id="specs">Specifications</h2>
+      
+<div class="table-wrap scroll">
+  <table>
+    <tbody>
+      <tr><td>Input formats</td><td>JPG, PNG, WebP, HEIC</td></tr>
+      <tr><td>Output formats</td><td>JPG, PNG, WebP, HEIC &mdash; and PDF for multi-image documents</td></tr>
+      <tr><td>Target file size</td><td>100 KB, 200 KB, 500 KB, 1 MB, or a custom limit</td></tr>
+      <tr><td>Dimensions</td><td>Exact width and height, with an aspect-ratio lock; percentage scaling; print sizes</td></tr>
+      <tr><td>Batch</td><td>Unlimited &mdash; batch size is not a paid feature</td></tr>
+      <tr><td>Saved to</td><td><code>Pictures/Snug</code>, always as new files</td></tr>
+      <tr><td>Originals</td><td>Never modified unless you explicitly confirm a replacement</td></tr>
+      <tr><td>Works offline</td><td>Yes &mdash; every tool works in airplane mode</td></tr>
+      <tr><td>Account</td><td>None. No sign-up, no login, no email address</td></tr>
+      <tr><td>Price</td><td>Free. An optional subscription removes ads and nothing else</td></tr>
+    </tbody>
+  </table>
+</div>
+
+      <h2 id="faq">Questions</h2>
+      <div class="faq">
+    <details>
+      <summary>What is the difference between resizing and compressing?</summary>
+      <div class="answer"><p>Resizing changes how many pixels the photo has. Compressing keeps the pixels and uses fewer bytes to describe them. If a form wants smaller dimensions, resize. If the dimensions are right and the file is just too heavy, compress.</p></div>
+    </details>
+    <details>
+      <summary>Why does my photo get rejected even though it is under the size limit?</summary>
+      <div class="answer"><p>File size is only one of the rules. Forms also check dimensions, aspect ratio, format and sometimes resolution — and for document photos, things like background and framing that no resizer can judge.</p></div>
+    </details>
+    <details>
+      <summary>Can Snug make a small photo bigger?</summary>
+      <div class="answer"><p>It can enlarge one, but it cannot add detail that was never captured. An enlarged photo spreads the same information over more pixels, which usually looks softer, not better.</p></div>
+    </details>
+    <details>
+      <summary>Does batch mode cost anything?</summary>
+      <div class="answer"><p>No. Batch size is not limited and is not a paid feature. The optional subscription removes ads and changes nothing else.</p></div>
+    </details>
+    <details>
+      <summary>Where do the finished files go?</summary>
+      <div class="answer"><p>Into <code>Pictures/Snug</code> as new files. Your originals stay exactly where they were.</p></div>
+    </details>
+  </div>
+      </article>
+    </div>
+  </div>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Free, forever</h2>
+        <p>Every tool, preset and batch size is free and always will be. An optional subscription
+          removes ads. That is the only difference.</p>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn-ghost" href="blog/">Read the guides <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="sitemap">
+      <div class="about">
+        <a class="foot-brand" href="index.html">
+          <img src="assets/icon-96.png" width="28" height="28" alt="">
+          Snug
+        </a>
+        <p>Resize photos in seconds. Free, simple and private.</p>
+      </div>
+      <div>
+        <h3>Snug</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="what-it-does.html">What it does</a></li>
+          <li><a href="blog/">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:deevayrattanpuri@gmail.com">deevayrattanpuri@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal-line">
+      <p>Contact: <a href="mailto:deevayrattanpuri@gmail.com">deevayrattanpuri@gmail.com</a></p>
+      <p class="foot-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

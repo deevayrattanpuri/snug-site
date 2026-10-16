@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resize by percentage or by exact pixels? — Snug</title>
+<meta name="description" content="One is for when you know the requirement. The other is for when you just need it smaller.">
+<link rel="canonical" href="https://deevayrattanpuri.github.io/snug-site/blog/percentage-or-exact-pixels.html">
+<meta name="theme-color" content="#00897B" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A1210" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Resize by percentage or by exact pixels? — Snug">
+<meta property="og:description" content="One is for when you know the requirement. The other is for when you just need it smaller.">
+<meta property="og:url" content="https://deevayrattanpuri.github.io/snug-site/blog/percentage-or-exact-pixels.html">
+<meta property="og:image" content="https://deevayrattanpuri.github.io/snug-site/assets/feature-graphic.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/icon-32.png" sizes="32x32">
+<link rel="icon" href="../assets/icon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="../assets/icon-192.png">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Resize by percentage or by exact pixels?", "description": "One is for when you know the requirement. The other is for when you just need it smaller.", "datePublished": "2026-06-09", "dateModified": "2026-06-09", "author": {"@type": "Organization", "name": "Snug"}, "publisher": {"@type": "Organization", "name": "Snug"}, "mainEntityOfPage": "https://deevayrattanpuri.github.io/snug-site/blog/percentage-or-exact-pixels.html", "articleSection": "Sizing", "image": "https://deevayrattanpuri.github.io/snug-site/assets/feature-graphic.webp"}</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../index.html">
+      <img src="../assets/icon-96.png" width="30" height="30" alt="">
+      Snug
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="../index.html">Home</a><a href="../what-it-does.html">What it does</a><a href="../blog/" aria-current="page">Blog</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <article>
+    <header class="post-head">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18l6-6-6-6"/></svg>
+          <a href="index.html">Blog</a> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18l6-6-6-6"/></svg>
+          <span>Sizing</span>
+        </nav>
+        <h1>Resize by percentage or by exact pixels?</h1>
+        <p class="standfirst">One is for when you know the requirement. The other is for when you just need it smaller.</p>
+        <p class="byline">
+          <span class="kicker">Sizing</span>
+          <time datetime="2026-06-09">9 June 2026</time>
+          <span class="dot">&middot;</span><span>4 min read</span>
+        </p>
+      </div>
+    </header>
+
+    <div class="post-article">
+      <div class="wrap">
+        <div class="prose">
+<p>Both arrive at a smaller photo. Which one you want depends entirely on whether somebody has given
+you a number.</p>
+
+<h2>Exact pixels: when there is a requirement</h2>
+<p>A form says 600 &times; 600. A platform says 1080 px wide. A print needs 1200 &times; 1800. In all
+of these, the number is the point, and typing it is the only sensible move.</p>
+<p>The thing to watch is the aspect ratio. If your photo is 4:3 and the requirement is 1:1, typing
+600 &times; 600 with the ratio unlocked will squash it. Crop to square first, then set the
+dimensions.</p>
+
+<h2>Percentage: when you just need smaller</h2>
+<p>No requirement, just a file that is too heavy to send. Scaling to 50% halves both dimensions and
+drops the file to roughly a quarter &mdash; without you having to know or care what the original
+dimensions were.</p>
+<p>It is also the right tool for a mixed batch. A folder containing panoramas, portraits and
+screenshots has no single sensible pixel width. A fixed 1600 px would enlarge the screenshots and
+crop the panoramas awkwardly. 50% treats each one on its own terms.</p>
+
+<h2>A rough guide to percentages</h2>
+<div class="table-wrap scroll">
+  <table>
+    <thead><tr><th>Scale</th><th>File size becomes roughly</th><th>Good for</th></tr></thead>
+    <tbody>
+      <tr><td>75%</td><td>About half</td><td>A gentle trim with no visible change</td></tr>
+      <tr><td>50%</td><td>About a quarter</td><td>The everyday default for sharing</td></tr>
+      <tr><td>25%</td><td>About a sixteenth</td><td>Thumbnails, quick previews, very tight limits</td></tr>
+    </tbody>
+  </table>
+</div>
+<p>The relationship is quadratic, not linear: halving both width and height quarters the pixel count.
+This surprises people, and it is why 50% is usually far more than enough.</p>
+
+<h2>Do not enlarge</h2>
+<p>Scaling above 100% does not add detail. The software is inventing pixels by averaging their
+neighbours, which produces a softer, sometimes smeared result. If you need a bigger image, go back to
+a higher-resolution original rather than enlarging a small one.</p>
+
+<h2>And there is a third option</h2>
+<p>When the requirement is a file size rather than a dimension &mdash; "under 200 KB", with no mention
+of pixels &mdash; neither approach is ideal, because you would be guessing at the number that gets
+you there. Set the target file size instead and let the tool work out the dimensions.</p>
+          <div class="takeaway">
+            <h3>The short version</h3>
+            <p>Pixels when someone gave you a number. Percentage when they did not. Target file size when the number is in kilobytes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <section class="section">
+    <div class="related wrap">
+      <h2>Related reading</h2>
+      <ul class="posts">
+      <li>
+        <a class="post-card" href="resize-photo-to-100-kb.html">
+          <span class="cover c-sizing">
+            <span class="kicker">Sizing</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="8" width="19" height="8" rx="2"/><path d="M7 8v3"/><path d="M11 8v4"/><path d="M15 8v3"/><path d="M19 8v4"/></svg>
+          </span>
+          <span class="post-body">
+            <h3>How to resize a photo to 100 KB without wrecking it</h3>
+            <p>A hundred kilobytes is a brutal limit for a modern phone photo. Here is what actually has to give, and the order to give it in.</p>
+            <span class="post-meta">
+              <time datetime="2026-10-12">12 October 2026</time>
+              <span class="dot">&middot;</span><span>6 min read</span>
+            </span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="post-card" href="why-online-forms-reject-your-photo.html">
+          <span class="cover c-sizing">
+            <span class="kicker">Sizing</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="8" width="19" height="8" rx="2"/><path d="M7 8v3"/><path d="M11 8v4"/><path d="M15 8v3"/><path d="M19 8v4"/></svg>
+          </span>
+          <span class="post-body">
+            <h3>Why online forms reject your photo (and how to fix each reason)</h3>
+            <p>"Invalid image" is the least helpful error message in existence. These are the eight things it usually means.</p>
+            <span class="post-meta">
+              <time datetime="2026-10-06">6 October 2026</time>
+              <span class="dot">&middot;</span><span>7 min read</span>
+            </span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="post-card" href="resize-vs-compress.html">
+          <span class="cover c-sizing">
+            <span class="kicker">Sizing</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="8" width="19" height="8" rx="2"/><path d="M7 8v3"/><path d="M11 8v4"/><path d="M15 8v3"/><path d="M19 8v4"/></svg>
+          </span>
+          <span class="post-body">
+            <h3>Resize or compress? They are not the same thing</h3>
+            <p>Both make the file smaller. They do it by removing completely different things, and picking wrong costs you quality you did not need to lose.</p>
+            <span class="post-meta">
+              <time datetime="2026-09-08">8 September 2026</time>
+              <span class="dot">&middot;</span><span>5 min read</span>
+            </span>
+          </span>
+        </a>
+      </li>
+      </ul>
+      <a class="more" href="index.html">All 27 articles <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Snug does this on your phone</h2>
+        <p>Resize by file size or pixels, crop, convert and batch whole albums &mdash; free, with
+          nothing uploaded and your originals always kept.</p>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn-ghost" href="../what-it-does.html">See what Snug does <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="sitemap">
+      <div class="about">
+        <a class="foot-brand" href="../index.html">
+          <img src="../assets/icon-96.png" width="28" height="28" alt="">
+          Snug
+        </a>
+        <p>Resize photos in seconds. Free, simple and private.</p>
+      </div>
+      <div>
+        <h3>Snug</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../what-it-does.html">What it does</a></li>
+          <li><a href="../blog/">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="../privacy.html">Privacy Policy</a></li>
+          <li><a href="../terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:deevayrattanpuri@gmail.com">deevayrattanpuri@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal-line">
+      <p>Contact: <a href="mailto:deevayrattanpuri@gmail.com">deevayrattanpuri@gmail.com</a></p>
+      <p class="foot-links">
+        <a href="../privacy.html">Privacy Policy</a>
+        <a href="../terms.html">Terms of Service</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

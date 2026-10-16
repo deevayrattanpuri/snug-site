@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to batch resize a whole album without losing your mind — Snug</title>
+<meta name="description" content="Forty photos, one setting, one pass. The trick is deciding the setting before you start.">
+<link rel="canonical" href="https://deevayrattanpuri.github.io/snug-site/blog/batch-resize-a-whole-album.html">
+<meta name="theme-color" content="#00897B" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A1210" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="How to batch resize a whole album without losing your mind — Snug">
+<meta property="og:description" content="Forty photos, one setting, one pass. The trick is deciding the setting before you start.">
+<meta property="og:url" content="https://deevayrattanpuri.github.io/snug-site/blog/batch-resize-a-whole-album.html">
+<meta property="og:image" content="https://deevayrattanpuri.github.io/snug-site/assets/feature-graphic.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/icon-32.png" sizes="32x32">
+<link rel="icon" href="../assets/icon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="../assets/icon-192.png">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "How to batch resize a whole album without losing your mind", "description": "Forty photos, one setting, one pass. The trick is deciding the setting before you start.", "datePublished": "2026-09-01", "dateModified": "2026-09-01", "author": {"@type": "Organization", "name": "Snug"}, "publisher": {"@type": "Organization", "name": "Snug"}, "mainEntityOfPage": "https://deevayrattanpuri.github.io/snug-site/blog/batch-resize-a-whole-album.html", "articleSection": "Workflow", "image": "https://deevayrattanpuri.github.io/snug-site/assets/feature-graphic.webp"}</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../index.html">
+      <img src="../assets/icon-96.png" width="30" height="30" alt="">
+      Snug
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="../index.html">Home</a><a href="../what-it-does.html">What it does</a><a href="../blog/" aria-current="page">Blog</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <article>
+    <header class="post-head">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18l6-6-6-6"/></svg>
+          <a href="index.html">Blog</a> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18l6-6-6-6"/></svg>
+          <span>Workflow</span>
+        </nav>
+        <h1>How to batch resize a whole album without losing your mind</h1>
+        <p class="standfirst">Forty photos, one setting, one pass. The trick is deciding the setting before you start.</p>
+        <p class="byline">
+          <span class="kicker">Workflow</span>
+          <time datetime="2026-09-01">1 September 2026</time>
+          <span class="dot">&middot;</span><span>5 min read</span>
+        </p>
+      </div>
+    </header>
+
+    <div class="post-article">
+      <div class="wrap">
+        <div class="prose">
+<p>Resizing one photo is a minor chore. Resizing forty, one at a time, is how people give up and send
+a 200 MB email that bounces.</p>
+
+<h2>Decide the destination first</h2>
+<p>Batch processing goes wrong when you start before knowing what the photos are for. The answer
+changes everything:</p>
+<ul>
+  <li><strong>Email or messaging</strong> &mdash; 1200&ndash;1600 px on the long edge is generous.
+    Most recipients view on a phone.</li>
+  <li><strong>A web gallery</strong> &mdash; around 2000 px, saved as WebP if the platform accepts it.</li>
+  <li><strong>Archive storage</strong> &mdash; do not resize at all. Compress gently if you must.</li>
+  <li><strong>A printed album</strong> &mdash; leave them alone. Print needs every pixel.</li>
+</ul>
+<p>Pick one, then apply it to everything. Mixing destinations in one batch is how you end up redoing
+the whole thing.</p>
+
+<h2>Scale by percentage when sizes vary</h2>
+<p>If the album is a mix &mdash; some panoramas, some portraits, some screenshots &mdash; a fixed
+pixel width treats them unequally. It enlarges the small ones, which helps nobody, and crops the wide
+ones awkwardly.</p>
+<p>Percentage scaling respects each photo's own proportions. 50% makes everything half the size it
+was, whatever it started as.</p>
+
+<h2>Rename on the way out</h2>
+<p>Camera filenames are chronological but unreadable. A batch rename &mdash; <code>italy-01</code>,
+<code>italy-02</code> &mdash; means the files arrive in order and the recipient can find anything.
+Doing it during the resize saves a second pass through a file manager.</p>
+
+<h2>Check a sample before committing</h2>
+<p>Run one representative photo through your chosen settings and look at it properly. Pick the most
+demanding one in the set &mdash; the most detailed, the darkest, the one with text in it. If that
+survives, the rest will.</p>
+
+<h2>Keep the originals</h2>
+<p>This is the part people regret skipping. A batch operation applies the same decision to dozens of
+files at once, so a bad decision is dozens of mistakes.</p>
+<p>Snug writes results as new files in <code>Pictures/Snug</code> and never touches the originals,
+which means a batch you are unhappy with costs you nothing but the time to run it again.</p>
+
+<h2>What the numbers usually look like</h2>
+<p>A typical holiday album &mdash; a dozen photos at 3&ndash;5 MB each &mdash; comes to around 48 MB.
+Resized for sharing, the same twelve land near 9 or 10 MB in total, an 80% saving, and on a phone
+screen you would be hard pressed to tell which is which.</p>
+<p>That is the difference between an email that sends and one that bounces.</p>
+          <div class="takeaway">
+            <h3>The short version</h3>
+            <p>Decide the destination, test on your hardest photo, then run the batch. Originals stay untouched, so a bad call costs only time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <section class="section">
+    <div class="related wrap">
+      <h2>Related reading</h2>
+      <ul class="posts">
+      <li>
+        <a class="post-card" href="photos-to-pdf-for-applications.html">
+          <span class="cover c-workflow">
+            <span class="kicker">Workflow</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2 2.5 7 12 12l9.5-5L12 2Z"/><path d="M2.5 12 12 17l9.5-5"/><path d="M2.5 17 12 22l9.5-5"/></svg>
+          </span>
+          <span class="post-body">
+            <h3>Turning photos into a PDF that an application will accept</h3>
+            <p>One file, pages in order, small enough to attach. Most rejected documents fail on the last of those.</p>
+            <span class="post-meta">
+              <time datetime="2026-07-28">28 July 2026</time>
+              <span class="dot">&middot;</span><span>5 min read</span>
+            </span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="post-card" href="compress-photos-for-email.html">
+          <span class="cover c-workflow">
+            <span class="kicker">Workflow</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2 2.5 7 12 12l9.5-5L12 2Z"/><path d="M2.5 12 12 17l9.5-5"/><path d="M2.5 17 12 22l9.5-5"/></svg>
+          </span>
+          <span class="post-body">
+            <h3>How to email photos that actually arrive</h3>
+            <p>Most mail servers stop at around 25 MB, and some stop much earlier. Four phone photos can breach it.</p>
+            <span class="post-meta">
+              <time datetime="2026-07-21">21 July 2026</time>
+              <span class="dot">&middot;</span><span>5 min read</span>
+            </span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="post-card" href="scanning-documents-with-your-phone.html">
+          <span class="cover c-workflow">
+            <span class="kicker">Workflow</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2 2.5 7 12 12l9.5-5L12 2Z"/><path d="M2.5 12 12 17l9.5-5"/><path d="M2.5 17 12 22l9.5-5"/></svg>
+          </span>
+          <span class="post-body">
+            <h3>Scanning documents with a phone camera, properly</h3>
+            <p>A photograph of a page and a usable scan are different things. The gap is mostly light and framing.</p>
+            <span class="post-meta">
+              <time datetime="2026-05-05">5 May 2026</time>
+              <span class="dot">&middot;</span><span>5 min read</span>
+            </span>
+          </span>
+        </a>
+      </li>
+      </ul>
+      <a class="more" href="index.html">All 27 articles <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Snug does this on your phone</h2>
+        <p>Resize by file size or pixels, crop, convert and batch whole albums &mdash; free, with
+          nothing uploaded and your originals always kept.</p>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn-ghost" href="../what-it-does.html">See what Snug does <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="sitemap">
+      <div class="about">
+        <a class="foot-brand" href="../index.html">
+          <img src="../assets/icon-96.png" width="28" height="28" alt="">
+          Snug
+        </a>
+        <p>Resize photos in seconds. Free, simple and private.</p>
+      </div>
+      <div>
+        <h3>Snug</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../what-it-does.html">What it does</a></li>
+          <li><a href="../blog/">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="../privacy.html">Privacy Policy</a></li>
+          <li><a href="../terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:deevayrattanpuri@gmail.com">deevayrattanpuri@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal-line">
+      <p>Contact: <a href="mailto:deevayrattanpuri@gmail.com">deevayrattanpuri@gmail.com</a></p>
+      <p class="foot-links">
+        <a href="../privacy.html">Privacy Policy</a>
+        <a href="../terms.html">Terms of Service</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What happens to a JPEG every time you re-save it — Snug</title>
+<meta name="description" content="Generation loss is real, cumulative and irreversible. It is also easy to avoid once you know where it comes from.">
+<link rel="canonical" href="https://deevayrattanpuri.github.io/snug-site/blog/resaving-a-jpeg.html">
+<meta name="theme-color" content="#00897B" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A1210" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="What happens to a JPEG every time you re-save it — Snug">
+<meta property="og:description" content="Generation loss is real, cumulative and irreversible. It is also easy to avoid once you know where it comes from.">
+<meta property="og:url" content="https://deevayrattanpuri.github.io/snug-site/blog/resaving-a-jpeg.html">
+<meta property="og:image" content="https://deevayrattanpuri.github.io/snug-site/assets/feature-graphic.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/icon-32.png" sizes="32x32">
+<link rel="icon" href="../assets/icon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="../assets/icon-192.png">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "What happens to a JPEG every time you re-save it", "description": "Generation loss is real, cumulative and irreversible. It is also easy to avoid once you know where it comes from.", "datePublished": "2026-06-16", "dateModified": "2026-06-16", "author": {"@type": "Organization", "name": "Snug"}, "publisher": {"@type": "Organization", "name": "Snug"}, "mainEntityOfPage": "https://deevayrattanpuri.github.io/snug-site/blog/resaving-a-jpeg.html", "articleSection": "Formats", "image": "https://deevayrattanpuri.github.io/snug-site/assets/feature-graphic.webp"}</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../index.html">
+      <img src="../assets/icon-96.png" width="30" height="30" alt="">
+      Snug
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="../index.html">Home</a><a href="../what-it-does.html">What it does</a><a href="../blog/" aria-current="page">Blog</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <article>
+    <header class="post-head">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18l6-6-6-6"/></svg>
+          <a href="index.html">Blog</a> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18l6-6-6-6"/></svg>
+          <span>Formats</span>
+        </nav>
+        <h1>What happens to a JPEG every time you re-save it</h1>
+        <p class="standfirst">Generation loss is real, cumulative and irreversible. It is also easy to avoid once you know where it comes from.</p>
+        <p class="byline">
+          <span class="kicker">Formats</span>
+          <time datetime="2026-06-16">16 June 2026</time>
+          <span class="dot">&middot;</span><span>5 min read</span>
+        </p>
+      </div>
+    </header>
+
+    <div class="post-article">
+      <div class="wrap">
+        <div class="prose">
+<p>Open a JPEG, rotate it, save it. Open it again, crop it, save it. Do that a dozen times and the
+photo visibly degrades &mdash; not because of anything you did, but because of what JPEG does every
+time it writes a file.</p>
+
+<h2>Why it happens</h2>
+<p>JPEG is lossy. When it saves, it discards information it judges you will not miss. That judgement
+is made fresh every single time, on whatever it was handed.</p>
+<p>The crucial detail: the second save does not know what the original looked like. It sees the
+already-damaged version as the truth and discards detail from <em>that</em>. The errors compound,
+each generation built on the last one's mistakes.</p>
+
+<h2>What it looks like</h2>
+<p>Early generations are invisible. By five or six you start seeing softness in fine detail. By ten
+or fifteen, edges develop halos, smooth areas break into blocks, and colours in saturated regions
+drift. It is the same look as a meme that has been screenshotted and reposted a hundred times,
+because that is exactly what has happened to it.</p>
+
+<h2>What triggers a re-save</h2>
+<ul>
+  <li>Any edit saved back to a JPG &mdash; crop, rotate, brightness, anything</li>
+  <li>Exporting from an app that re-encodes on the way out</li>
+  <li>Uploading to a platform that recompresses (almost all of them)</li>
+  <li>Sharing through messaging apps that compress attachments</li>
+  <li>Converting between formats and back again</li>
+</ul>
+<p>A photo that goes phone &rarr; messaging app &rarr; saved &rarr; uploaded &rarr; downloaded has
+been through four generations before anyone has edited it.</p>
+
+<h2>What does not cause it</h2>
+<p>Copying a file does not. Moving it does not. Backing it up does not. Simply opening it to look at
+it does not. Only writing a new JPEG does &mdash; so copying a photo between devices a hundred times
+costs you nothing at all.</p>
+<p>Lossless formats &mdash; PNG, and WebP in lossless mode &mdash; do not suffer from this. Re-save a
+PNG a thousand times and it is bit-for-bit identical.</p>
+
+<h2>How to avoid it</h2>
+<ol>
+  <li><strong>Keep one untouched original</strong> and treat it as the master.</li>
+  <li><strong>Export from the original every time,</strong> rather than editing an export.</li>
+  <li><strong>Do all your changes in one pass</strong> &mdash; crop, resize and convert together, so
+    there is only one encode.</li>
+  <li><strong>Do not re-save at high quality to "fix" a bad file.</strong> It cannot recover what is
+    gone, and makes the file larger for nothing.</li>
+</ol>
+
+<h2>Why keeping originals matters</h2>
+<p>This is the practical reason an app should never overwrite your source photo. If every resize
+replaced the original, your library would quietly degrade with each pass.</p>
+<p>Snug writes results as new files in <code>Pictures/Snug</code> and leaves the original alone, so
+the master stays a master and every export comes from full quality.</p>
+          <div class="takeaway">
+            <h3>The short version</h3>
+            <p>Each JPEG save discards a little more, permanently. Keep one original and export from it every time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <section class="section">
+    <div class="related wrap">
+      <h2>Related reading</h2>
+      <ul class="posts">
+      <li>
+        <a class="post-card" href="heic-to-jpg.html">
+          <span class="cover c-formats">
+            <span class="kicker">Formats</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h13l-3-3"/><path d="M20 16H7l3 3"/></svg>
+          </span>
+          <span class="post-body">
+            <h3>HEIC to JPG: why your phone photos won't upload</h3>
+            <p>Your photo opens perfectly on your phone and is rejected everywhere else. The format is why.</p>
+            <span class="post-meta">
+              <time datetime="2026-09-29">29 September 2026</time>
+              <span class="dot">&middot;</span><span>5 min read</span>
+            </span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="post-card" href="jpg-png-webp-which-format.html">
+          <span class="cover c-formats">
+            <span class="kicker">Formats</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 8h13l-3-3"/><path d="M20 16H7l3 3"/></svg>
+          </span>
+          <span class="post-body">
+            <h3>JPG, PNG or WebP: which should you actually save in?</h3>
+            <p>Three formats, three jobs. Picking the wrong one is why your screenshot looks fuzzy and your photo is 9 MB.</p>
+            <span class="post-meta">
+              <time datetime="2026-09-15">15 September 2026</time>
+              <span class="dot">&middot;</span><span>6 min read</span>
+            </span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="post-card" href="resize-photo-to-100-kb.html">
+          <span class="cover c-sizing">
+            <span class="kicker">Sizing</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="8" width="19" height="8" rx="2"/><path d="M7 8v3"/><path d="M11 8v4"/><path d="M15 8v3"/><path d="M19 8v4"/></svg>
+          </span>
+          <span class="post-body">
+            <h3>How to resize a photo to 100 KB without wrecking it</h3>
+            <p>A hundred kilobytes is a brutal limit for a modern phone photo. Here is what actually has to give, and the order to give it in.</p>
+            <span class="post-meta">
+              <time datetime="2026-10-12">12 October 2026</time>
+              <span class="dot">&middot;</span><span>6 min read</span>
+            </span>
+          </span>
+        </a>
+      </li>
+      </ul>
+      <a class="more" href="index.html">All 27 articles <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Snug does this on your phone</h2>
+        <p>Resize by file size or pixels, crop, convert and batch whole albums &mdash; free, with
+          nothing uploaded and your originals always kept.</p>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn-ghost" href="../what-it-does.html">See what Snug does <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="sitemap">
+      <div class="about">
+        <a class="foot-brand" href="../index.html">
+          <img src="../assets/icon-96.png" width="28" height="28" alt="">
+          Snug
+        </a>
+        <p>Resize photos in seconds. Free, simple and private.</p>
+      </div>
+      <div>
+        <h3>Snug</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../what-it-does.html">What it does</a></li>
+          <li><a href="../blog/">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="../privacy.html">Privacy Policy</a></li>
+          <li><a href="../terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:deevayrattanpuri@gmail.com">deevayrattanpuri@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal-line">
+      <p>Contact: <a href="mailto:deevayrattanpuri@gmail.com">deevayrattanpuri@gmail.com</a></p>
+      <p class="foot-links">
+        <a href="../privacy.html">Privacy Policy</a>
+        <a href="../terms.html">Terms of Service</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

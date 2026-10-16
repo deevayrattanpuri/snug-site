@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why online forms reject your photo (and how to fix each reason) — Snug</title>
+<meta name="description" content=""Invalid image" is the least helpful error message in existence. These are the eight things it usually means.">
+<link rel="canonical" href="https://deevayrattanpuri.github.io/snug-site/blog/why-online-forms-reject-your-photo.html">
+<meta name="theme-color" content="#00897B" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A1210" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Why online forms reject your photo (and how to fix each reason) — Snug">
+<meta property="og:description" content=""Invalid image" is the least helpful error message in existence. These are the eight things it usually means.">
+<meta property="og:url" content="https://deevayrattanpuri.github.io/snug-site/blog/why-online-forms-reject-your-photo.html">
+<meta property="og:image" content="https://deevayrattanpuri.github.io/snug-site/assets/feature-graphic.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/icon-32.png" sizes="32x32">
+<link rel="icon" href="../assets/icon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="../assets/icon-192.png">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Why online forms reject your photo (and how to fix each reason)", "description": "\"Invalid image\" is the least helpful error message in existence. These are the eight things it usually means.", "datePublished": "2026-10-06", "dateModified": "2026-10-06", "author": {"@type": "Organization", "name": "Snug"}, "publisher": {"@type": "Organization", "name": "Snug"}, "mainEntityOfPage": "https://deevayrattanpuri.github.io/snug-site/blog/why-online-forms-reject-your-photo.html", "articleSection": "Sizing", "image": "https://deevayrattanpuri.github.io/snug-site/assets/feature-graphic.webp"}</script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../index.html">
+      <img src="../assets/icon-96.png" width="30" height="30" alt="">
+      Snug
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="../index.html">Home</a><a href="../what-it-does.html">What it does</a><a href="../blog/" aria-current="page">Blog</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <article>
+    <header class="post-head">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18l6-6-6-6"/></svg>
+          <a href="index.html">Blog</a> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18l6-6-6-6"/></svg>
+          <span>Sizing</span>
+        </nav>
+        <h1>Why online forms reject your photo (and how to fix each reason)</h1>
+        <p class="standfirst">"Invalid image" is the least helpful error message in existence. These are the eight things it usually means.</p>
+        <p class="byline">
+          <span class="kicker">Sizing</span>
+          <time datetime="2026-10-06">6 October 2026</time>
+          <span class="dot">&middot;</span><span>7 min read</span>
+        </p>
+      </div>
+    </header>
+
+    <div class="post-article">
+      <div class="wrap">
+        <div class="prose">
+<p>Upload forms are built by people who had a very specific file in mind, and they rarely explain
+what it was. You get <em>Invalid image</em> or <em>Upload failed</em>, with no indication which rule
+you broke. Here are the usual suspects, roughly in the order they catch people out.</p>
+
+<h2>1. The file is too big</h2>
+<p>The most common one, and the easiest to fix. The limit is almost always stated in kilobytes
+somewhere near the upload button. Resize the dimensions down first, then compress &mdash; in that
+order &mdash; and you will usually clear the limit without the photo looking mangled.</p>
+
+<h2>2. The file is too small</h2>
+<p>Less common but genuinely confusing when it happens. Some portals set a <em>minimum</em> size,
+because a 12 KB image is probably too low-resolution to verify anything. If you have over-compressed,
+go back to the original and try again with a higher ceiling.</p>
+
+<h2>3. The dimensions are wrong</h2>
+<p>A form asking for 600 &times; 600 means exactly that, not "about square". If your photo is
+4032 &times; 3024, no amount of compression will satisfy it. Crop to the right shape first, then set
+the exact pixel dimensions.</p>
+
+<h2>4. The aspect ratio is wrong</h2>
+<p>Subtly different from the above. Some forms accept a range of sizes but insist on a ratio &mdash;
+35:45 for many passport photos, 1:1 for profile pictures. Resizing a 4:3 photo into a square without
+cropping will stretch faces, and some systems detect it.</p>
+
+<h2>5. The format is not supported</h2>
+<p>This is the HEIC problem. Modern iPhones and many Android cameras save HEIC by default, and a
+large number of upload forms have never heard of it. The file looks like a photo on your phone and
+arrives as an unreadable blob. Convert to JPG and it works.</p>
+<p>WebP causes the same trouble on older systems, and PNG is occasionally rejected by forms that
+specifically want a photograph.</p>
+
+<h2>6. The orientation is wrong</h2>
+<p>A maddening one. Photos store a rotation flag in their metadata, and your gallery honours it, so
+the picture looks upright. A form that strips metadata reads the raw pixels and gets a sideways
+image. Rotating and re-saving bakes the correct orientation into the pixels themselves.</p>
+
+<h2>7. Metadata is confusing the validator</h2>
+<p>Some strict validators reject files with unexpected colour profiles or embedded thumbnails.
+Stripping metadata produces a plain, boring file that almost nothing objects to &mdash; and has the
+side benefit of removing the GPS coordinates.</p>
+
+<h2>8. The content does not meet the rules</h2>
+<p>The one no resizer can solve. Document photos are checked for background colour, head position,
+shadows, expression and whether you are wearing glasses. If the file is mechanically perfect and
+still rejected, re-read the content rules rather than the technical ones.</p>
+
+<h2>A sensible order to work through</h2>
+<ol>
+  <li>Read the stated requirements again, properly, and write down every number.</li>
+  <li>Convert to JPG unless told otherwise.</li>
+  <li>Crop to the required ratio.</li>
+  <li>Set the exact pixel dimensions.</li>
+  <li>Bring the file under the size ceiling.</li>
+  <li>Strip the metadata.</li>
+</ol>
+<p>Six steps, and the first one solves more cases than the other five combined.</p>
+          <div class="takeaway">
+            <h3>The short version</h3>
+            <p>Convert, crop, resize, compress, strip — in that order. And read the requirements twice before touching the photo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <section class="section">
+    <div class="related wrap">
+      <h2>Related reading</h2>
+      <ul class="posts">
+      <li>
+        <a class="post-card" href="resize-photo-to-100-kb.html">
+          <span class="cover c-sizing">
+            <span class="kicker">Sizing</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="8" width="19" height="8" rx="2"/><path d="M7 8v3"/><path d="M11 8v4"/><path d="M15 8v3"/><path d="M19 8v4"/></svg>
+          </span>
+          <span class="post-body">
+            <h3>How to resize a photo to 100 KB without wrecking it</h3>
+            <p>A hundred kilobytes is a brutal limit for a modern phone photo. Here is what actually has to give, and the order to give it in.</p>
+            <span class="post-meta">
+              <time datetime="2026-10-12">12 October 2026</time>
+              <span class="dot">&middot;</span><span>6 min read</span>
+            </span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="post-card" href="resize-vs-compress.html">
+          <span class="cover c-sizing">
+            <span class="kicker">Sizing</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="8" width="19" height="8" rx="2"/><path d="M7 8v3"/><path d="M11 8v4"/><path d="M15 8v3"/><path d="M19 8v4"/></svg>
+          </span>
+          <span class="post-body">
+            <h3>Resize or compress? They are not the same thing</h3>
+            <p>Both make the file smaller. They do it by removing completely different things, and picking wrong costs you quality you did not need to lose.</p>
+            <span class="post-meta">
+              <time datetime="2026-09-08">8 September 2026</time>
+              <span class="dot">&middot;</span><span>5 min read</span>
+            </span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a class="post-card" href="dpi-explained.html">
+          <span class="cover c-sizing">
+            <span class="kicker">Sizing</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.5" y="8" width="19" height="8" rx="2"/><path d="M7 8v3"/><path d="M11 8v4"/><path d="M15 8v3"/><path d="M19 8v4"/></svg>
+          </span>
+          <span class="post-body">
+            <h3>DPI explained: when 300 matters and when it means nothing</h3>
+            <p>DPI is the most misunderstood number in photography. On a screen it is meaningless. On paper it decides everything.</p>
+            <span class="post-meta">
+              <time datetime="2026-08-11">11 August 2026</time>
+              <span class="dot">&middot;</span><span>6 min read</span>
+            </span>
+          </span>
+        </a>
+      </li>
+      </ul>
+      <a class="more" href="index.html">All 27 articles <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Snug does this on your phone</h2>
+        <p>Resize by file size or pixels, crop, convert and batch whole albums &mdash; free, with
+          nothing uploaded and your originals always kept.</p>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn-ghost" href="../what-it-does.html">See what Snug does <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="sitemap">
+      <div class="about">
+        <a class="foot-brand" href="../index.html">
+          <img src="../assets/icon-96.png" width="28" height="28" alt="">
+          Snug
+        </a>
+        <p>Resize photos in seconds. Free, simple and private.</p>
+      </div>
+      <div>
+        <h3>Snug</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../what-it-does.html">What it does</a></li>
+          <li><a href="../blog/">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="../privacy.html">Privacy Policy</a></li>
+          <li><a href="../terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:deevayrattanpuri@gmail.com">deevayrattanpuri@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal-line">
+      <p>Contact: <a href="mailto:deevayrattanpuri@gmail.com">deevayrattanpuri@gmail.com</a></p>
+      <p class="foot-links">
+        <a href="../privacy.html">Privacy Policy</a>
+        <a href="../terms.html">Terms of Service</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
