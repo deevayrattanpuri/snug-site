@@ -4,43 +4,158 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Snug — Resize photos in seconds</title>
+<meta name="description" content="Resize photos in seconds. Free, simple and private.">
+<meta name="theme-color" content="#00897B" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0B1211" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='14' fill='%2300897B'/%3E%3Crect x='9.2' y='9.2' width='29.6' height='29.6' rx='9' fill='none' stroke='%23fff' stroke-opacity='.5' stroke-width='2.2'/%3E%3Crect x='17' y='17' width='14' height='14' rx='4.5' fill='%23fff'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg class="mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="mkTop" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#2EC4B6"/><stop offset="1" stop-color="#00796B"/>
+          </linearGradient>
+        </defs>
+        <rect width="48" height="48" rx="14" fill="url(#mkTop)"/>
+        <rect x="9.2" y="9.2" width="29.6" height="29.6" rx="9" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="2.2"/>
+        <rect x="17" y="17" width="14" height="14" rx="4.5" fill="#fff"/>
+      </svg>
+      Snug
+    </a>
+    <nav class="nav">
+      <a href="#what">What it does</a>
+      <a href="#free">Free, forever</a>
+      <a href="#legal">Legal</a>
+    </nav>
+  </div>
+</header>
+
 <main>
-  <h1>Snug</h1>
-  <p class="meta">Resize photos in seconds. Free, simple and private.</p>
 
-  <p class="lead">
-    Shrink, resize and fit photos for email, social posts and official forms. Everything
-    happens on your phone &mdash; Snug works in airplane mode, and your pictures never leave
-    the device.
-  </p>
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Snug</h1>
+        <p class="tagline">Resize photos in seconds. Free, simple and private.</p>
+        <p class="lead">
+          Shrink, resize and fit photos for email, social posts and official forms. Everything
+          happens on your phone &mdash; Snug works in airplane mode, and your pictures never leave
+          the device.
+        </p>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <i></i><i></i><i></i>
+        <svg class="mark" viewBox="0 0 48 48" focusable="false">
+          <defs>
+            <linearGradient id="mkHero" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#2EC4B6"/><stop offset="1" stop-color="#00796B"/>
+            </linearGradient>
+          </defs>
+          <rect width="48" height="48" rx="14" fill="url(#mkHero)"/>
+          <rect x="9.2" y="9.2" width="29.6" height="29.6" rx="9" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="2.2"/>
+          <rect x="17" y="17" width="14" height="14" rx="4.5" fill="#fff"/>
+        </svg>
+      </div>
+    </div>
+  </section>
 
-  <h2>What it does</h2>
-  <ul>
-    <li>Resize by kilobytes, pixels, percentage or print size</li>
-    <li>Crop, fit, rotate and convert between JPG, PNG and WebP</li>
-    <li>Presets for passport photos, exam forms, marketplaces and social networks</li>
-    <li>Batch resize and rename, images to PDF, watermarks, metadata removal</li>
-    <li>Originals are always kept &mdash; results are saved as new files</li>
-  </ul>
+  <section class="section tint" id="what">
+    <div class="wrap">
+      <h2>What it does</h2>
+      <ul class="features">
+        <li>
+          <span class="tile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/>
+            </svg>
+          </span>
+          <span>Resize by kilobytes, pixels, percentage or print size</span>
+        </li>
+        <li>
+          <span class="tile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M6 2v14a2 2 0 0 0 2 2h14"/><path d="M18 22V8a2 2 0 0 0-2-2H2"/>
+            </svg>
+          </span>
+          <span>Crop, fit, rotate and convert between JPG, PNG and WebP</span>
+        </li>
+        <li>
+          <span class="tile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <rect x="3" y="4" width="18" height="16" rx="2.5"/><circle cx="9" cy="10" r="2.1"/>
+              <path d="M5.6 16.8c.7-1.7 1.9-2.5 3.4-2.5s2.7.8 3.4 2.5"/><path d="M15.5 9.5h3.2"/><path d="M15.5 13h3.2"/>
+            </svg>
+          </span>
+          <span>Presets for passport photos, exam forms, marketplaces and social networks</span>
+        </li>
+        <li>
+          <span class="tile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M12 2 2.5 7 12 12l9.5-5L12 2Z"/><path d="M2.5 12 12 17l9.5-5"/><path d="M2.5 17 12 22l9.5-5"/>
+            </svg>
+          </span>
+          <span>Batch resize and rename, images to PDF, watermarks, metadata removal</span>
+        </li>
+        <li>
+          <span class="tile">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M12 21.5s7.5-3.8 7.5-9.5V5.2L12 2.5 4.5 5.2v6.8c0 5.7 7.5 9.5 7.5 9.5Z"/><path d="m8.8 11.8 2.3 2.3 4.1-4.3"/>
+            </svg>
+          </span>
+          <span>Originals are always kept &mdash; results are saved as new files</span>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-  <h2>Free, forever</h2>
-  <p>
-    Every tool, preset and batch size is free and always will be. An optional subscription
-    removes ads. That is the only difference.
-  </p>
+  <section class="section" id="free">
+    <div class="wrap">
+      <div class="panel">
+        <h2>Free, forever</h2>
+        <p>
+          Every tool, preset and batch size is free and always will be. An optional subscription
+          removes ads. That is the only difference.
+        </p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Legal</h2>
-  <ul>
-    <li><a href="privacy.html">Privacy Policy</a></li>
-    <li><a href="terms.html">Terms of Service</a></li>
-  </ul>
+  <section class="section" id="legal">
+    <div class="wrap">
+      <h2>Legal</h2>
+      <ul class="cards">
+        <li>
+          <a class="card-link" href="privacy.html">
+            Privacy Policy
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="card-link" href="terms.html">
+            Terms of Service
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18l6-6-6-6"/></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-  <footer>
-    <p>Contact: <a href="mailto:deevayrattanpuri@gmail.com">deevayrattanpuri@gmail.com</a></p>
-  </footer>
 </main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>Contact: <a href="mailto:deevayrattanpuri@gmail.com">deevayrattanpuri@gmail.com</a></p>
+    <p class="foot-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </p>
+  </div>
+</footer>
+
 </body>
 </html>
